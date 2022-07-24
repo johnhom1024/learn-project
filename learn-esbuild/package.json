@@ -1,0 +1,19 @@
+{
+  "name": "learn-esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:jsx": "esbuild app.jsx --bundle --outfile=out.js",
+    "build:ts": "esbuild ./test.ts --loader=ts --outfile=test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.14.49",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
