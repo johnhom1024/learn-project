@@ -14,6 +14,8 @@ function reactive(target) {
     set(target, key, value, receiver) {
       Reflect.set(target, key, value, receiver);
       trigger(receiver, key);
+      // 注意，set代理应当返回一个布尔值。严格模式下，set代理如果没有返回true，就会报错。
+      return true;
     },
   };
 

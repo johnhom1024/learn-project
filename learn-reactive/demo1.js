@@ -1,7 +1,7 @@
 const { reactive } = require('./index.js');
 const { effect } = require('./utils.js');
 
-const person = reactive({ name: '俊鸿' })
+const person = reactive({ name: 'johnhom' })
 
 
 let nameStr1 = ''
@@ -14,6 +14,6 @@ effect(effectNameStr);
 
 
 console.log(nameStr1);
-person.name = '美眉'
+person.name = 'meimei'
 
 console.log(nameStr1)
